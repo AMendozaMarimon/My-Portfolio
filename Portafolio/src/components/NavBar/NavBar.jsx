@@ -50,6 +50,7 @@ export default function NavBar() {
             </nav>
             <div>
                 {
+                    //Cuando es mobile se despliega los botones del NavBar
                     isMobile && (
                         <div className={`${styles.btn} ${isMenuOpen ? styles.active : styles.notActive}`} onClick={() => setIsMenuOpen(!isMenuOpen)}>
                             <button>HOME</button>
