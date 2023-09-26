@@ -1,0 +1,24 @@
+.containerP {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #716f6f;
+}
+
+.containerS {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.containerS p {
+  font-family: "Nunito Sans", sans-serif;  
+  font-size: 13px;
+  color: white; 
+}
+
+@media (max-width: 768px) {
+    .containerS p {
+        font-size: 12px;
+    }
+}

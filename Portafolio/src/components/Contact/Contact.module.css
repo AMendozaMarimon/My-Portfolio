@@ -1,0 +1,131 @@
+.containerP {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #e3e3e3;
+}
+
+.containerS {
+  display: flex;
+  margin: 5vw 9vw;
+  background-color: white;
+  border-radius: 2vw;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -4px rgba(0, 0, 0, 0.1);
+}
+
+.left {
+  width: 15vw;
+  padding: 3vw 4vw 1.5vw 4vw;
+}
+
+.left h2 {
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 30px;
+  color: #a6a6a6;
+  margin: 0;
+}
+
+.left p {
+  font-family: "Inter", sans-serif;
+  font-size: 15px;
+  line-height: 20px;
+  color: #7b7878;
+  margin: 1.4vw 0;
+}
+
+.left img {
+  width: 15vw;
+  padding-left: 7vw;
+}
+
+.rigth {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 4vw;
+  background-color: #ededed;
+  border-top-right-radius: 2vw;
+  border-bottom-right-radius: 2vw;
+}
+
+.rigth p {
+  display: inline-flex;
+  background-color: white;
+  font-family: "Nunito Sans", sans-serif;
+  color: #7b7878;
+  padding: 1vw;
+  border-radius: 1vw;
+  align-items: center;
+}
+
+.rigth img {
+  width: 1.5vw;
+  margin-right: 1vw;
+}
+
+@media (max-width: 768px) {
+  .containerS {
+    margin-top: 10vw;
+    margin-bottom: 10vw;
+    flex-direction: column;
+  }
+
+  .left {
+    width: 100%;
+    padding: 0;
+    border-radius: 3vw;
+  }
+
+  .text h2 {
+    display: flex;
+    justify-content: center;
+    margin: 5vw 0;
+  }
+
+  .text p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 7vw;
+    text-align: center;
+    margin-bottom: 10vw;
+  }
+
+  .left p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 7vw;
+    text-align: center;
+    margin-bottom: 10vw;
+  }
+
+  .left img {
+    display: none;
+  }
+
+  .rigth {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
+
+  .rigth img {
+    width: 7vw;
+    padding: 1vw;
+    margin-right: 2vw;
+  }
+
+  .rigth p {
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    justify-content: center;
+    padding-right: 5vw;
+  }
+
+  .rigth a {
+    padding: 0.2vw 0;
+    text-decoration: none;
+  }
+}

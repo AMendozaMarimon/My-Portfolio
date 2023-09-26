@@ -1,93 +1,141 @@
 .containerP {
-    background-color: #F7F7F7;
-    padding-top: 5.1vw;
-    width: 100%;
-    height: 100%;
+  background-color: #f7f7f7;
+  padding-top: 5.1vw;
+  width: 100%;
+  height: 100%;
 }
 
 .containerS {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 2vw 9vw
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 2vw 9vw;
+}
+
+.containerT {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 3vw;
+}
+
+.tecn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 2vw;
+  padding: 2vw;
+  background-color: white;
+  margin: 1VW 0 6vw 0;
+  box-shadow: 0 10px 15px -3px rgba(0,0,0,.1), 0 4px 6px -4px rgba(0,0,0,.1);
+}
+
+.tecn img {
+  width: 12%;
+  margin: 0 1.2vw;
 }
 
 .sideLeft {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .titles {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .Aimar {
-    width: 25vw;
+  width: 25vw;
 }
 
 .sideLeft h1 {
-    font-family: 'Oswald', sans-serif;
-    color: #A6A6A6;
-    font-size: 70px;
-    line-height: 110%; /* Usamos un porcentaje para el line-height */
-    margin-bottom: 2vw;
+  font-family: "Oswald", sans-serif;
+  color: #a6a6a6;
+  font-size: 70px;
+  line-height: 110%; /* Usamos un porcentaje para el line-height */
+  margin-bottom: 2vw;
 }
 
 .sideLeft p {
-    font-family: 'Inter', sans-serif;
-    font-size: 17px;
-    color: #A6A6A6;
-    margin: 6px 0 0 0;
+  font-family: "Inter", sans-serif;
+  font-size: 17px;
+  color: #a6a6a6;
+  margin: 6px 0 0 0;
 }
 
 .country {
-    width: 20px;
-    height: auto;
+  width: 20px;
+  height: auto;
 }
 
 .divImg {
-    display: flex;
-    align-items: center;
-    margin: 2vw 0;
+  display: flex;
+  align-items: center;
+  margin: 2vw 0;
 }
 
 .divImg img {
-    width: 37px;
-    margin-right: 20px;
-    cursor: pointer;
+  width: 37px;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.skills {
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 20px;
+  color: #a6a6a6;
 }
 
 @media (max-width: 768px) {
-    .containerS {
-        display: flex;
-        flex-direction: column-reverse;
-        margin-top: 20vw;
-    }
+  .containerS {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-top: 20vw;
+  }
 
-    .sideLeft {
-        align-items: center;
-    }
+  .sideLeft {
+    align-items: center;
+  }
 
-    .Aimar {
-        width: 250px;
-        height: auto;
-        margin-bottom: 1vw;
-    }
+  .Aimar {
+    width: 250px;
+    height: auto;
+    margin-bottom: 1vw;
+  }
 
-    .sideLeft h1 {
-        font-size: 55px;
-        text-align: center;
-        margin-bottom: 30px;
-    }
+  .sideLeft h1 {
+    font-size: 55px;
+    text-align: center;
+    margin-bottom: 30px;
+  }
 
-    .sideLeft p {
-        text-align: center;
-        text-wrap: balance;
-        margin-bottom: 10px;
-    }
+  .sideLeft p {
+    text-align: center;
+    text-wrap: balance;
+    margin-bottom: 10px;
+  }
 
-    .divImg {
-        margin-top: 5vw;
-    }
+  .divImg {
+    margin-top: 5vw;
+  }
+
+  .divImg img {
+    margin: 0 3vw;
+  }
+
+  .tecn {
+    width: 80%;
+    flex-wrap: wrap;
+    padding: 6vw 4vw;
+    border-radius: 5vw;
+    margin-bottom: 14vw;
+  }
+
+  .tecn img {
+    width: 13%;
+    margin: 0 3%;
+    padding: 2vw 0;
+  }
 }
