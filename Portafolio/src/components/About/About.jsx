@@ -18,10 +18,10 @@ export default function About() {
     let p1 = "";
     idiom === "ES" ? (p1 =
         <p>
-            Como <b>desarrollador Full-Stack</b> tengo la capacidad de convertir conceptos en código de manera efectiva y me motiva resolver obstáculos, desafíos y dilemas en cada proyecto. Mi dedicación y rigor me convierten en una opción confiable para cualquier tarea.
+            Como <b>Full-Stack Developer</b> tengo la capacidad de convertir conceptos en código de manera efectiva y me motiva resolver obstáculos, desafíos y dilemas en cada proyecto. Mi dedicación y rigor me convierten en una opción confiable para cualquier tarea.
         </p>) : (p1 =
             <p>
-                As a <b>Full-Stack developer,</b> I have the ability to convert concepts into code effectively, and I am motivated by solving obstacles, challenges and dilemmas in each project. My dedication and rigor make me a reliable choice for any task.
+                As a <b>Full-Stack Developer,</b> I have the ability to convert concepts into code effectively, and I am motivated by solving obstacles, challenges and dilemmas in each project. My dedication and rigor make me a reliable choice for any task.
             </p>);
 
     let p2 = "";
