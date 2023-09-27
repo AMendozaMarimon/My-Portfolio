@@ -92,6 +92,10 @@
     margin-bottom: 6vw;
   }
 
+  .left b {
+    padding-right: 1.2vw;
+  }
+
   .left p {
     display: flex;
     align-items: center;

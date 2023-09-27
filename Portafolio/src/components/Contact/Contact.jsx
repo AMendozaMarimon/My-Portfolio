@@ -33,10 +33,10 @@ export default function Contact() {
     let p2 = "";
     idiom === "ES" ? (p2 =
         <p>
-            <b>Gracias </b> por su tiempo ❤️
+            <b>Gracias</b> por su tiempo ❤️
         </p>) : (p2 =
             <p>
-                <b>Thanks </b>  for your time ❤️
+                <b>Thanks</b> for your time ❤️
             </p>);
 
     return (
