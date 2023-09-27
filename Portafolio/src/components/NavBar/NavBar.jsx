@@ -1,5 +1,7 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-scroll";
+import { changeIdioms } from "../../Redux/action";
+import { useDispatch, useSelector } from 'react-redux';
 import LOGO from "./Icons/LOGO AIMAR.svg";
 import MENU from "./Icons/MENU.svg";
 import styles from "./NavBar.module.css";
@@ -9,6 +11,9 @@ export default function NavBar() {
     const [isMobile, setIsMobile] = useState(false);
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
+    const idiom = useSelector((state) => state.idioms); 
+    const dispatch = useDispatch();
+    
     useEffect(() => {
         const handleRealize = () => {
             //Cuando el tamaño de la pantalla es menor que 768 se cambia el estado a TRUE
@@ -22,6 +27,19 @@ export default function NavBar() {
             window.removeEventListener("resize", handleRealize);
         };
     }, []);
+
+    const handleChangeIdiom = () => {
+        dispatch(changeIdioms(idiom));
+    }
+
+    let buttonAbout = "";
+    idiom === "ES" ? (buttonAbout = "SOBRE MÍ") : (buttonAbout = "ABOUT");
+
+    let buttonProjects = "";
+    idiom === "ES" ? (buttonProjects = "PROYECTOS") : (buttonProjects = "PROJECTS");
+
+    let buttonContact = "";
+    idiom === "ES" ? (buttonContact = "CONTÁCTAME!") : (buttonContact = "CONTACT ME!");
 
     return (
         <div className={styles.navbar}>
@@ -41,42 +59,47 @@ export default function NavBar() {
                         ) : (
                             //Muestra los botones cuando la pantalla es más grande
                             <div className={styles.btn}>
-                                <Link
-                                    activeClass="active"
-                                    to="home"
-                                    spy={true}
-                                    smooth={true}
-                                    offset={-70}
-                                    duration={500}>
-                                    <button>HOME</button>
-                                </Link>
-                                <Link
-                                    activeClass="active"
-                                    to="about"
-                                    spy={true}
-                                    smooth={true}
-                                    offset={-70}
-                                    duration={500}>
-                                    <button>ABOUT</button>
-                                </Link>
-                                <Link
-                                    activeClass="active"
-                                    to="works"
-                                    spy={true}
-                                    smooth={true}
-                                    offset={-70}
-                                    duration={500}>
-                                    <button>PROJECTS</button>
-                                </Link>
-                                <Link
-                                    activeClass="active"
-                                    to="contact"
-                                    spy={true}
-                                    smooth={true}
-                                    offset={-70}
-                                    duration={500}>
-                                    <button>CONTACT ME!</button>
-                                </Link>
+                                <div className={styles.btnNavBar}>
+                                    <Link
+                                        activeClass="active"
+                                        to="home"
+                                        spy={true}
+                                        smooth={true}
+                                        offset={-70}
+                                        duration={500}>
+                                        <button>HOME</button>
+                                    </Link>
+                                    <Link
+                                        activeClass="active"
+                                        to="about"
+                                        spy={true}
+                                        smooth={true}
+                                        offset={-70}
+                                        duration={500}>
+                                        <button>{buttonAbout}</button>
+                                    </Link>
+                                    <Link
+                                        activeClass="active"
+                                        to="works"
+                                        spy={true}
+                                        smooth={true}
+                                        offset={-70}
+                                        duration={500}>
+                                        <button>{buttonProjects}</button>
+                                    </Link>
+                                    <Link
+                                        activeClass="active"
+                                        to="contact"
+                                        spy={true}
+                                        smooth={true}
+                                        offset={-70}
+                                        duration={500}>
+                                        <button>{buttonContact}</button>
+                                    </Link>
+                                </div>
+                                <div className={styles.changeId} onClick={handleChangeIdiom}>
+                                    <button>{idiom === "ES" ? "ES" : "EN"}</button>
+                                </div>
                             </div>
                         )}
                 </div>
@@ -102,7 +125,7 @@ export default function NavBar() {
                                 smooth={true}
                                 offset={-70}
                                 duration={500}>
-                                <button onClick={() => setIsMenuOpen(!isMenuOpen)}>ABOUT</button>
+                                <button onClick={() => setIsMenuOpen(!isMenuOpen)}>{buttonAbout}</button>
                             </Link>
                             <Link
                                 activeClass="active"
@@ -111,7 +134,7 @@ export default function NavBar() {
                                 smooth={true}
                                 offset={-70}
                                 duration={500}>
-                                <button onClick={() => setIsMenuOpen(!isMenuOpen)}>PROJECTS</button>
+                                <button onClick={() => setIsMenuOpen(!isMenuOpen)}>{buttonProjects}</button>
                             </Link>
                             <Link
                                 activeClass="active"
@@ -120,8 +143,9 @@ export default function NavBar() {
                                 smooth={true}
                                 offset={-70}
                                 duration={500}>
-                                <button onClick={() => setIsMenuOpen(!isMenuOpen)}>CONTACT ME!</button>
+                                <button onClick={() => setIsMenuOpen(!isMenuOpen)}>{buttonContact}</button>
                             </Link>
+                            <button onClick={handleChangeIdiom}>{idiom === "ES" ? "ES" : "EN"}</button>
                         </div>
                     )
                 }
