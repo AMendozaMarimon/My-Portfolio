@@ -47,7 +47,7 @@
 }
 
 .Aimar {
-  width: 25vw;
+  width: 33vw;
 }
 
 .sideLeft h1 {
@@ -100,9 +100,10 @@
   }
 
   .Aimar {
-    width: 250px;
+    width: 70vw;
     height: auto;
     margin-bottom: 1vw;
+    margin-top: 7vw;
   }
 
   .sideLeft h1 {

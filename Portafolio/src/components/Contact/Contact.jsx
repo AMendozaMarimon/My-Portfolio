@@ -8,7 +8,7 @@ import styles from "./Contact.module.css";
 
 export default function Contact() {
     return (
-        <div className={styles.containerP}>
+        <div className={styles.containerP} id="contact">
             <div className={styles.containerS}>
                 <div className={styles.left}>
                     <div className={styles.text}>

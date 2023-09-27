@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { Link } from "react-scroll";
 import LOGO from "./Icons/LOGO AIMAR.svg";
 import MENU from "./Icons/MENU.svg";
 import styles from "./NavBar.module.css";
@@ -40,10 +41,42 @@ export default function NavBar() {
                         ) : (
                             //Muestra los botones cuando la pantalla es más grande
                             <div className={styles.btn}>
-                                <button>HOME</button>
-                                <button>ABOUT</button>
-                                <button>PROJECTS</button>
-                                <button>CONTACT ME!</button>
+                                <Link
+                                    activeClass="active"
+                                    to="home"
+                                    spy={true}
+                                    smooth={true}
+                                    offset={-70}
+                                    duration={500}>
+                                    <button>HOME</button>
+                                </Link>
+                                <Link
+                                    activeClass="active"
+                                    to="about"
+                                    spy={true}
+                                    smooth={true}
+                                    offset={-70}
+                                    duration={500}>
+                                    <button>ABOUT</button>
+                                </Link>
+                                <Link
+                                    activeClass="active"
+                                    to="works"
+                                    spy={true}
+                                    smooth={true}
+                                    offset={-70}
+                                    duration={500}>
+                                    <button>PROJECTS</button>
+                                </Link>
+                                <Link
+                                    activeClass="active"
+                                    to="contact"
+                                    spy={true}
+                                    smooth={true}
+                                    offset={-70}
+                                    duration={500}>
+                                    <button>CONTACT ME!</button>
+                                </Link>
                             </div>
                         )}
                 </div>
@@ -52,11 +85,43 @@ export default function NavBar() {
                 {
                     //Cuando es mobile se despliega los botones del NavBar
                     isMobile && (
-                        <div className={`${styles.btn} ${isMenuOpen ? styles.active : styles.notActive}`} onClick={() => setIsMenuOpen(!isMenuOpen)}>
-                            <button>HOME</button>
-                            <button>ABOUT</button>
-                            <button>PROJECTS</button>
-                            <button>CONTACT ME!</button>
+                        <div className={`${styles.btn} ${isMenuOpen ? styles.active : styles.notActive}`}>
+                            <Link
+                                activeClass="active"
+                                to="home"
+                                spy={true}
+                                smooth={true}
+                                offset={-70}
+                                duration={500}>
+                                <button onClick={() => setIsMenuOpen(!isMenuOpen)}>HOME</button>
+                            </Link>
+                            <Link
+                                activeClass="active"
+                                to="about"
+                                spy={true}
+                                smooth={true}
+                                offset={-70}
+                                duration={500}>
+                                <button onClick={() => setIsMenuOpen(!isMenuOpen)}>ABOUT</button>
+                            </Link>
+                            <Link
+                                activeClass="active"
+                                to="works"
+                                spy={true}
+                                smooth={true}
+                                offset={-70}
+                                duration={500}>
+                                <button onClick={() => setIsMenuOpen(!isMenuOpen)}>PROJECTS</button>
+                            </Link>
+                            <Link
+                                activeClass="active"
+                                to="contact"
+                                spy={true}
+                                smooth={true}
+                                offset={-70}
+                                duration={500}>
+                                <button onClick={() => setIsMenuOpen(!isMenuOpen)}>CONTACT ME!</button>
+                            </Link>
                         </div>
                     )
                 }

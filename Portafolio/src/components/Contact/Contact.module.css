@@ -108,6 +108,8 @@
   .rigth {
     border-top-left-radius: 0;
     border-top-right-radius: 0;
+    border-bottom-left-radius: 3vw;
+    border-bottom-right-radius: 3vw;
   }
 
   .rigth img {

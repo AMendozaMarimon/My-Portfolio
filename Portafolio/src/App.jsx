@@ -6,7 +6,7 @@ import NavBar from './components/NavBar/NavBar'
 import Works from './components/Works/Works'
 
 function App() {
-
+  
   return (
     <div>
       <NavBar />

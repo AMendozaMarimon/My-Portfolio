@@ -16,7 +16,7 @@ import styles from "./Works.module.css";
 
 export default function Works() {
     return (
-        <div className={styles.containerP}>
+        <div className={styles.containerP} id="works">
             <div className={styles.containerS}>
                 <div className={styles.titles}>
                     <h2>Projects</h2>
@@ -103,6 +103,7 @@ export default function Works() {
                                 <img src={HTML} alt="HTML..." title="HTML" />
                                 <img src={CSS} alt="CSS..." title="CSS" />
                                 <img src={React} alt="React..." title="React" />
+                                <img src={Redux} alt="Redux..." title="Redux" />
                             </div>
                         </div>
                         <div className={styles.containerImg}>

@@ -1,9 +1,9 @@
 import styles from "./About.module.css";
-import Aimar2 from "./Img/WHOIAM.webp";
+import Aimar2 from "./Img/Aimar2.webp";
 
 export default function About() {
     return (
-        <div className={styles.containerP}>
+        <div className={styles.containerP} id="about">
             <div className={styles.containerS}>
                 <div className={styles.imgAimar2}>
                     <img className={styles.imgAimar} src={Aimar2} alt="Aimar..." />
