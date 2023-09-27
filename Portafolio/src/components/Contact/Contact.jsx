@@ -4,22 +4,54 @@ import WhatsApp from "./Icons/WHATSAPP.svg";
 import Correo from "./Icons/CORREO.png";
 import Llamada from "./Icons/LLAMADA.png";
 import Cat from "./Icons/GATITO.png";
+import { useSelector } from 'react-redux';
 import styles from "./Contact.module.css";
 
 export default function Contact() {
+
+    const idiom = useSelector((state) => state.idioms);
+
+    let h2 = "";
+    idiom === "ES" ? (h2 =
+        <h2>
+            Contáctame!
+        </h2>
+    ) : (h2 =
+        <h2>
+            Contact Me!
+        </h2>);
+
+    let p1 = "";
+    idiom === "ES" ? (p1 =
+        <p>
+            Si estás interesado en contactarme, ¡llámame o escríbeme! Les dejo mis redes.
+        </p>) : (p1 =
+            <p>
+                If you are interested in contacting me, call or write to me! I leave you my networks.
+            </p>);
+
+    let p2 = "";
+    idiom === "ES" ? (p2 =
+        <p>
+            <b>Gracias </b> por su tiempo ❤️
+        </p>) : (p2 =
+            <p>
+                <b>Thanks </b>  for your time ❤️
+            </p>);
+
     return (
         <div className={styles.containerP} id="contact">
             <div className={styles.containerS}>
                 <div className={styles.left}>
                     <div className={styles.text}>
-                        <h2>Contact Me!</h2>
-                        <p>If you are interested in contacting me, call or write to me! I leave you my networks.</p>
+                        <h2>{h2}</h2>
+                        <p>{p1}</p>
                     </div>
                     <div>
                         <img src={Cat} alt="Cat..." />
                     </div>
                     <div>
-                        <p><b>Thanks </b>  for your time ❤️</p>
+                        <p>{p2}</p>
                     </div>
                 </div>
                 <div className={styles.rigth}>

@@ -12,21 +12,71 @@ import Express from "./Icons/EXPRESS.svg";
 import Postgres from "./Icons/POSTGRES.svg";
 import Git from "./Icons/GIT.svg";
 import Github from "./Icons/GITHUB.svg";
+import { useSelector } from 'react-redux';
 import styles from "./Works.module.css";
 
 export default function Works() {
+
+    const idiom = useSelector((state) => state.idioms);
+
+    let h2 = "";
+    idiom === "ES" ? (h2 =
+        <h2>
+            Proyectos
+        </h2>) : (h2 =
+            <h2>
+                Projects
+            </h2>);
+
+    let pRaM = "";
+    idiom === "ES" ? (pRaM =
+        <p>
+            Mi <b>primer proyecto</b> ❤️, una página donde podemos solicitar todos los personajes de la serie con su información.
+        </p>) : (pRaM =
+            <p>
+                My <b>first project</b> ❤️, a page where we can request all the characters in the series with their information.
+            </p>);
+
+    let pFood = "";
+    idiom === "ES" ? (pFood =
+        <p>
+            ¿Se te antoja algo pero no sabes cómo prepararlo? <b>food.</b> es la pagina correcta!
+            Puedes buscar 🔍 las recetas que quieras o subir tus propias recetas para ayudar a otras personas.
+        </p>) : (pFood =
+            <p>
+                Are you craving something but don't know how to prepare it? <b>food.</b> is the right page! <br />You can search 🔍 for the recipes you want or upload your own recipes to help other people.
+            </p>)
+
+    let pVehiBuy = "";
+    idiom === "ES" ? (pVehiBuy =
+        <p>
+            Si quieres comprar tu primer coche de lujo o vender el tuyo, no esperes más, <b>Vehibuy</b> es un <b>e-commerce</b> donde todo te lo pone fácil.
+        </p>) : (pVehiBuy =
+            <p>
+                If you want to buy your first luxury car or sell yours, don't wait any longer, <b>Vehibuy    </b> is an <b>e-commerce</b> where everything is made easy for you.
+            </p>);
+
+    let pPortFolio = "";
+    idiom === "ES" ? (pPortFolio =
+        <p>
+            Este <b>portafolio</b> es muy importante para mi ❤️, es lo que demuestra mi progreso poco a poco y por primera vez haciendo mi página <b>responsive</b>.
+        </p>) : (pPortFolio =
+            <p>
+                This <b>portfolio</b> is very important to me ❤️, it is what demonstrates my progress little by little and for the first time making my page <b>responsive</b>.
+            </p>);
+
     return (
         <div className={styles.containerP} id="works">
             <div className={styles.containerS}>
                 <div className={styles.titles}>
-                    <h2>Projects</h2>
+                    <h2>{h2}</h2>
                 </div>
                 <div className={styles.containerCards}>
                     <div className={styles.cards}>
                         <div className={styles.infoCards}>
                             <div className={styles.info}>
                                 <h2>Rick and Morty</h2>
-                                <p>My <b>first project</b> ❤️, a page where we can request all the characters in the series with their information.</p>
+                                <p>{pRaM}</p>
                             </div>
                             <div className={styles.imgTecn}>
                                 <img src={Js} alt="Javascript..." title="Javascript" />
@@ -46,7 +96,7 @@ export default function Works() {
                         <div className={styles.infoCards}>
                             <div className={styles.info}>
                                 <h2>food.</h2>
-                                <p>Are you craving something but don't know how to prepare it? <b>food.</b> is the right page! <br />You can search 🔍 for the recipes you want or upload your own recipes to help other people.</p>
+                                <p>{pFood}</p>
                             </div>
                             <div className={styles.imgTecn}>
                                 <img src={Js} alt="Javascript..." title="Javascript" />
@@ -69,7 +119,7 @@ export default function Works() {
                         <div className={styles.infoCards}>
                             <div className={styles.info}>
                                 <h2>VehiBuy</h2>
-                                <p>If you want to buy your first luxury car or sell yours, don't wait any longer, <b>Vehibuy    </b> is an <b>e-commerce</b> where everything is made easy for you.</p>
+                                <p>{pVehiBuy}</p>
                             </div>
                             <div className={styles.imgTecn}>
                                 <img src={Js} alt="Javascript..." title="Javascript" />
@@ -82,7 +132,7 @@ export default function Works() {
                                 <img src={Git} alt="Git..." title="Git" />
                             </div>
                         </div>
-                        
+
                         <div className={styles.containerImg}>
                             <a href="https://vehibuy-rho.vercel.app/home" target="_blanck">
                                 <img className={styles.imgWorks} src={VehiBuy} alt="Vehibuy..." />
@@ -96,7 +146,7 @@ export default function Works() {
                         <div className={styles.infoCards}>
                             <div className={styles.info}>
                                 <h2>PortFolio</h2>
-                                <p>This <b>portfolio</b> is very important to me ❤️, it is what demonstrates my progress little by little and for the first time making my page <b>responsive</b>.</p>
+                                <p>{pPortFolio}</p>
                             </div>
                             <div className={styles.imgTecn}>
                                 <img src={Js} alt="Javascript..." title="Javascript" />
