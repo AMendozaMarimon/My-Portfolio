@@ -41,7 +41,7 @@ export default function Contact() {
 
     return (
         <div className={styles.containerP} id="contact">
-            <div className={styles.containerS}>
+            <div className={styles.containerS} data-aos="fade-up">
                 <div className={styles.left}>
                     <div className={styles.text}>
                         <h2>{h2}</h2>

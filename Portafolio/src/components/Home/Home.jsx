@@ -79,10 +79,10 @@ export default function Home() {
                 </div>
             </div>
             <div className={styles.containerT}>
-                <div className={styles.skills}>
+                <div className={styles.skills} data-aos="zoom-in">
                     <h3>{h3}</h3>
                 </div>
-                <div className={styles.tecn}>
+                <div className={styles.tecn} data-aos="fade-down-right">
                     <img src={Js} alt="Javascript..." title="Javascript" />
                     <img src={HTML} alt="Javascript..." title="HTML" />
                     <img src={CSS} alt="Javascript..." title="CSS" />

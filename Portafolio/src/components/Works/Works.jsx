@@ -2,6 +2,7 @@ import RaM from "./Img/RaM.webp";
 import food from "./Img/food..webp";
 import VehiBuy from "./Img/VehiBuy.webp";
 import PortFolio from "./Img/PortFolio.webp";
+import Chic from "./Img/Chic.webp";
 import Js from "./Icons/JS.svg";
 import HTML from "./Icons/HTML.svg";
 import CSS from "./Icons/CSS.svg";
@@ -65,14 +66,23 @@ export default function Works() {
                 This <b>portfolio</b> is very important to me ❤️, it is what demonstrates my progress little by little and for the first time making my page <b>responsive</b>.
             </p>);
 
+    let pChic = "";
+    idiom === "ES" ? (pChic =
+        <p>
+            Próximamente... ❤️
+        </p>) : (pChic =
+            <p>
+                Coming Soon... ❤️
+            </p>);
+
     return (
         <div className={styles.containerP} id="works">
             <div className={styles.containerS}>
-                <div className={styles.titles}>
+                <div className={styles.titles} data-aos="zoom-in">
                     <h2>{h2}</h2>
                 </div>
                 <div className={styles.containerCards}>
-                    <div className={styles.cards}>
+                    <div className={styles.cards} data-aos="fade-up">
                         <div className={styles.infoCards}>
                             <div className={styles.info}>
                                 <h2>Rick and Morty</h2>
@@ -92,7 +102,7 @@ export default function Works() {
                             </a>
                         </div>
                     </div>
-                    <div className={styles.cards}>
+                    <div className={styles.cards} data-aos="fade-up">
                         <div className={styles.infoCards}>
                             <div className={styles.info}>
                                 <h2>food.</h2>
@@ -115,7 +125,7 @@ export default function Works() {
                             </a>
                         </div>
                     </div>
-                    <div className={styles.cards}>
+                    <div className={styles.cards} data-aos="fade-up">
                         <div className={styles.infoCards}>
                             <div className={styles.info}>
                                 <h2>VehiBuy</h2>
@@ -142,7 +152,32 @@ export default function Works() {
                             </a>
                         </div>
                     </div>
-                    <div className={styles.cards}>
+                    <div className={styles.cards} data-aos="fade-up">
+                        <div className={styles.infoCards}>
+                            <div className={styles.info}>
+                                <h2>ChicCouture</h2>
+                                <p>{pChic}</p>
+                            </div>
+                            <div className={styles.imgTecn}>
+                                {/* <img src={Js} alt="Javascript..." title="Javascript" />
+                                <img src={CSS} alt="CSS..." title="CSS" />
+                                <img src={React} alt="React..." title="React" />
+                                <img src={Redux} alt="Redux..." title="Redux" />
+                                <img src={NodeJs} alt="NodeJs..." title="NodeJs" />
+                                <img src={Express} alt="Express..." title="Express" />
+                                <img src={Postgres} alt="Postgres..." title="Postgres" />
+                                <img src={Git} alt="Git..." title="Git" /> */}
+                            </div>
+                        </div>
+
+                        <div className={styles.containerImg}>
+                            <img className={styles.imgWorks} src={Chic} alt="chicCouture..." />
+                            <a href="https://github.com/AMendozaMarimon/ChicCouture_FRONT" target="_blanck">
+                                <img className={styles.githubP} src={Github} alt="Github..." />
+                            </a>
+                        </div>
+                    </div>
+                    <div className={styles.cards} data-aos="fade-up">
                         <div className={styles.infoCards}>
                             <div className={styles.info}>
                                 <h2>PortFolio</h2>
