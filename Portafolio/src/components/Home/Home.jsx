@@ -4,6 +4,7 @@ import Github from "./Icons/GITHUB.svg";
 import LinkedIn from "./Icons/LINKEDIN.svg";
 import WhatsApp from "./Icons/WHATSAPP.svg";
 import Js from "./Icons/JS.svg";
+import Ts from "./Icons/TYPESCRIPT.png";
 import HTML from "./Icons/HTML.svg";
 import CSS from "./Icons/CSS.svg";
 import React from "./Icons/REACT.svg";
@@ -84,8 +85,9 @@ export default function Home() {
                 </div>
                 <div className={styles.tecn}>
                     <img src={Js} alt="Javascript..." title="Javascript" />
-                    <img src={HTML} alt="Javascript..." title="HTML" />
-                    <img src={CSS} alt="Javascript..." title="CSS" />
+                    <img src={Ts} alt="Typescript..." title="Tpescript" />
+                    <img src={HTML} alt="HTML..." title="HTML" />
+                    <img src={CSS} alt="CSS..." title="CSS" />
                     <img src={React} alt="React..." title="React" />
                     <img src={Redux} alt="Redux..." title="Redux" />
                     <img src={NodeJs} alt="NodeJs..." title="NodeJs" />
