@@ -89,16 +89,16 @@ export default function Works() {
                                 <p>{pRaM}</p>
                             </div>
                             <div className={styles.imgTecn}>
-                                <img src={Js} alt="Javascript..." title="Javascript" />
-                                <img src={CSS} alt="CSS..." title="CSS" />
-                                <img src={React} alt="React..." title="React" />
-                                <img src={NodeJs} alt="NodeJs..." title="NodeJs" />
+                                <img src={Js} alt="Javascript..." title="Javascript" draggable="false"/>
+                                <img src={CSS} alt="CSS..." title="CSS" draggable="false"/>
+                                <img src={React} alt="React..." title="React" draggable="false"/>
+                                <img src={NodeJs} alt="NodeJs..." title="NodeJs" draggable="false"/>
                             </div>
                         </div>
                         <div className={styles.containerImg}>
-                            <img className={styles.imgWorks} src={RaM} alt="RickAndMortyPI..." />
-                            <a href="https://github.com/AMendozaMarimon/RickandMortyAPI_FRONT" target="_blanck">
-                                <img className={styles.githubP} src={Github} alt="Github..." />
+                            <img className={styles.imgWorks} src={RaM} alt="RickAndMortyPI..." draggable="false"/>
+                            <a href="https://github.com/AMendozaMarimon/RickandMortyAPI_FRONT" target="_blanck" draggable="false">
+                                <img className={styles.githubP} src={Github} alt="Github..." draggable="false"/>
                             </a>
                         </div>
                     </div>
@@ -109,19 +109,19 @@ export default function Works() {
                                 <p>{pFood}</p>
                             </div>
                             <div className={styles.imgTecn}>
-                                <img src={Js} alt="Javascript..." title="Javascript" />
-                                <img src={CSS} alt="CSS..." title="CSS" />
-                                <img src={React} alt="React..." title="React" />
-                                <img src={Redux} alt="Redux..." title="Redux" />
-                                <img src={NodeJs} alt="NodeJs..." title="NodeJs" />
-                                <img src={Express} alt="Express..." title="Express" />
-                                <img src={Postgres} alt="Postgres..." title="Postgres" />
+                                <img src={Js} alt="Javascript..." title="Javascript" draggable="false"/>
+                                <img src={CSS} alt="CSS..." title="CSS" draggable="false"/>
+                                <img src={React} alt="React..." title="React" draggable="false"/>
+                                <img src={Redux} alt="Redux..." title="Redux" draggable="false"/>
+                                <img src={NodeJs} alt="NodeJs..." title="NodeJs" draggable="false"/>
+                                <img src={Express} alt="Express..." title="Express" draggable="false"/>
+                                <img src={Postgres} alt="Postgres..." title="Postgres" draggable="false"/>
                             </div>
                         </div>
                         <div className={styles.containerImg}>
-                            <img className={styles.imgWorks} src={food} alt="food..." />
-                            <a href="https://github.com/AMendozaMarimon/API_food_Client/tree/main/Client" target="_blanck">
-                                <img className={styles.githubP} src={Github} alt="Github..." />
+                            <img className={styles.imgWorks} src={food} alt="food..." draggable="false"/>
+                            <a href="https://github.com/AMendozaMarimon/API_food_Client/tree/main/Client" target="_blanck" draggable="false">   
+                                <img className={styles.githubP} src={Github} alt="Github..." draggable="false"/>
                             </a>
                         </div>
                     </div>
@@ -132,23 +132,23 @@ export default function Works() {
                                 <p>{pVehiBuy}</p>
                             </div>
                             <div className={styles.imgTecn}>
-                                <img src={Js} alt="Javascript..." title="Javascript" />
-                                <img src={CSS} alt="CSS..." title="CSS" />
-                                <img src={React} alt="React..." title="React" />
-                                <img src={Redux} alt="Redux..." title="Redux" />
-                                <img src={NodeJs} alt="NodeJs..." title="NodeJs" />
-                                <img src={Express} alt="Express..." title="Express" />
-                                <img src={Postgres} alt="Postgres..." title="Postgres" />
-                                <img src={Git} alt="Git..." title="Git" />
+                                <img src={Js} alt="Javascript..." title="Javascript" draggable="false"/>
+                                <img src={CSS} alt="CSS..." title="CSS" draggable="false"/>
+                                <img src={React} alt="React..." title="React" draggable="false"/>
+                                <img src={Redux} alt="Redux..." title="Redux" draggable="false"/>
+                                <img src={NodeJs} alt="NodeJs..." title="NodeJs" draggable="false"/>
+                                <img src={Express} alt="Express..." title="Express" draggable="false"/>
+                                <img src={Postgres} alt="Postgres..." title="Postgres" draggable="false"/>
+                                <img src={Git} alt="Git..." title="Git" draggable="false"/>
                             </div>
                         </div>
 
                         <div className={styles.containerImg}>
-                            <a href="https://vehibuy-rho.vercel.app/home" target="_blanck">
-                                <img className={styles.imgWorks} src={VehiBuy} alt="Vehibuy..." />
+                            <a href="https://vehibuy-rho.vercel.app/home" target="_blanck" draggable="false">
+                                <img className={styles.imgWorks} src={VehiBuy} alt="Vehibuy..." draggable="false"/>
                             </a>
-                            <a href="https://github.com/GeroPazPapa1/Proyecto-Final-Final" target="_blanck">
-                                <img className={styles.githubP} src={Github} alt="Github..." />
+                            <a href="https://github.com/GeroPazPapa1/Proyecto-Final-Final" target="_blanck" draggable="false">
+                                <img className={styles.githubP} src={Github} alt="Github..." draggable="false"/>
                             </a>
                         </div>
                     </div>
@@ -171,9 +171,9 @@ export default function Works() {
                         </div>
 
                         <div className={styles.containerImg}>
-                            <img className={styles.imgWorks} src={Chic} alt="chicCouture..." />
-                            <a href="https://github.com/AMendozaMarimon/ChicCouture_FRONT" target="_blanck">
-                                <img className={styles.githubP} src={Github} alt="Github..." />
+                            <img className={styles.imgWorks} src={Chic} alt="chicCouture..." draggable="false"/>
+                            <a href="https://github.com/AMendozaMarimon/ChicCouture_FRONT" target="_blanck" draggable="false">
+                                <img className={styles.githubP} src={Github} alt="Github..." draggable="false"/>
                             </a>
                         </div>
                     </div>
@@ -184,17 +184,17 @@ export default function Works() {
                                 <p>{pPortFolio}</p>
                             </div>
                             <div className={styles.imgTecn}>
-                                <img src={Js} alt="Javascript..." title="Javascript" />
-                                <img src={HTML} alt="HTML..." title="HTML" />
-                                <img src={CSS} alt="CSS..." title="CSS" />
-                                <img src={React} alt="React..." title="React" />
-                                <img src={Redux} alt="Redux..." title="Redux" />
+                                <img src={Js} alt="Javascript..." title="Javascript" draggable="false"/>
+                                <img src={HTML} alt="HTML..." title="HTML" draggable="false"/>
+                                <img src={CSS} alt="CSS..." title="CSS" draggable="false"/>
+                                <img src={React} alt="React..." title="React" draggable="false"/>
+                                <img src={Redux} alt="Redux..." title="Redux" draggable="false"/>
                             </div>
                         </div>
                         <div className={styles.containerImg}>
-                            <img className={styles.imgWorks} src={PortFolio} alt="PortFolio..." />
-                            <a href="https://github.com/AMendozaMarimon/My-Portfolio" target="_blanck">
-                                <img className={styles.githubP} src={Github} alt="Github..." />
+                            <img className={styles.imgWorks} src={PortFolio} alt="PortFolio..." draggable="false"/>
+                            <a href="https://github.com/AMendozaMarimon/My-Portfolio" target="_blanck" draggable="false">
+                                <img className={styles.githubP} src={Github} alt="Github..." draggable="false"/>
                             </a>
                         </div>
                     </div>

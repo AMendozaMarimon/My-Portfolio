@@ -63,20 +63,20 @@ export default function Home() {
                         <p>{p2}</p>
                         <p>{p3}</p>
                         <div className={styles.divImg}>
-                            <a href="https://github.com/AMendozaMarimon" target="_blanck" rel="noopener noreferrer">
-                                <img src={Github} alt="Github..." />
+                            <a href="https://github.com/AMendozaMarimon" target="_blanck" rel="noopener noreferrer" draggable="false">
+                                <img src={Github} alt="Github..." draggable="false" title="Github"/>
                             </a>
-                            <a href="https://www.linkedin.com/in/aimar-mendoza/" target="_blanck" rel="noopener noreferrer">
-                                <img src={LinkedIn} alt="LinkedIn..." />
+                            <a href="https://www.linkedin.com/in/aimar-mendoza/" target="_blanck" rel="noopener noreferrer" draggable="false">
+                                <img src={LinkedIn} alt="LinkedIn..." draggable="false" title="LinkedIn"/>
                             </a>
-                            <a href="https://walink.co/c99d31" target="_blanck" rel="noopener noreferrer">
-                                <img src={WhatsApp} alt="WhatsApp..." />
+                            <a href="https://walink.co/c99d31" target="_blanck" rel="noopener noreferrer" draggable="false">
+                                <img src={WhatsApp} alt="WhatsApp..." draggable="false" title="WhatsApp"/>
                             </a>
                         </div>
                     </>
                 </div>
                 <div>
-                    <img className={styles.Aimar} src={Aimar} alt="Aimar..." />
+                    <img className={styles.Aimar} src={Aimar} alt="Aimar..." draggable="false"/>
                 </div>
             </div>
             <div className={styles.containerT}>
@@ -84,16 +84,16 @@ export default function Home() {
                     <h3>{h3}</h3>
                 </div>
                 <div className={styles.tecn}>
-                    <img src={Js} alt="Javascript..." title="Javascript" />
-                    <img src={Ts} alt="Typescript..." title="Tpescript" />
-                    <img src={HTML} alt="HTML..." title="HTML" />
-                    <img src={CSS} alt="CSS..." title="CSS" />
-                    <img src={React} alt="React..." title="React" />
-                    <img src={Redux} alt="Redux..." title="Redux" />
-                    <img src={NodeJs} alt="NodeJs..." title="NodeJs" />
-                    <img src={Express} alt="Express..." title="ExpressJs" />
-                    <img src={Postgres} alt="Postgres..." title="Postgres" />
-                    <img src={Git} alt="Git..." title="Git" />
+                    <img src={Js} alt="Javascript..." title="Javascript" draggable="false"/>
+                    <img src={Ts} alt="Typescript..." title="Tpescript" draggable="false"/>
+                    <img src={HTML} alt="HTML..." title="HTML" draggable="false"/>
+                    <img src={CSS} alt="CSS..." title="CSS" draggable="false"/>
+                    <img src={React} alt="React..." title="React" draggable="false"/>
+                    <img src={Redux} alt="Redux..." title="Redux" draggable="false"/>
+                    <img src={NodeJs} alt="NodeJs..." title="NodeJs" draggable="false"/>
+                    <img src={Express} alt="Express..." title="ExpressJs" draggable="false"/>
+                    <img src={Postgres} alt="Postgres..." title="Postgres" draggable="false"/>
+                    <img src={Git} alt="Git..." title="Git" draggable="false"/>
                 </div>
             </div>
         </div>

@@ -37,7 +37,7 @@
             <div className={styles.containerP} id="about">
                 <div className={styles.containerS}>
                     <div className={styles.imgAimar2} data-aos="fade-up-right">
-                        <img className={styles.imgAimar} src={Aimar2} alt="Aimar..." />
+                        <img className={styles.imgAimar} src={Aimar2} alt="Aimar..." draggable="false"/>
                     </div>
                     <div className={styles.text} data-aos="fade-down">
                         <>
