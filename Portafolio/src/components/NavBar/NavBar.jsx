@@ -28,9 +28,9 @@ export default function NavBar() {
         };
     }, []);
 
-    const handleChangeIdiom = () => {
-        dispatch(changeIdioms(idiom));
-    }
+    const handleChangeIdiom = async () => {
+        await dispatch(changeIdioms(idiom));
+    }       
 
     let buttonAbout = "";
     idiom === "ES" ? (buttonAbout = "SOBRE MÍ") : (buttonAbout = "ABOUT");
@@ -53,7 +53,7 @@ export default function NavBar() {
                             //Muestra el boton de Menú para teléfonos mobiles
                             <>
                                 <button className={styles.menu} onClick={() => setIsMenuOpen(!isMenuOpen)}>
-                                    <img className={styles.imgMenu} src={MENU} alt="Menu..." />
+                                    <img loading="lazy" className={styles.imgMenu} src={MENU} alt="Menu..." />
                                 </button>
                             </>
                         ) : (

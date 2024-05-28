@@ -48,7 +48,7 @@ export default function Contact() {
                         <p>{p1}</p>
                     </div>
                     <div>
-                        <img src={Cat} alt="Cat..." />
+                        <img loading="lazy" src={Cat} alt="Cat..." />
                     </div>
                     <div>
                         <p>{p2}</p>
@@ -57,16 +57,16 @@ export default function Contact() {
                 <div className={styles.rigth}>
                     <>
                         <a href="https://www.linkedin.com/in/aimar-mendoza/" target="_blanck">
-                            <p><img src={LinkedIn} alt="LinkedIn..." /> Aimar Mendoza</p>
+                            <p><img loading="lazy" src={LinkedIn} alt="LinkedIn..." /> Aimar Mendoza</p>
                         </a>
                         <a href="https://github.com/AMendozaMarimon" target="_blanck">
-                            <p><img src={Github} alt="Github..." /> AMendozaMarimon</p>
+                            <p><img loading="lazy" src={Github} alt="Github..." /> AMendozaMarimon</p>
                         </a>
                         <a href="https://walink.co/c99d31" target="_blanck">
-                            <p><img src={Llamada} alt="Llamada..." /> <img src={WhatsApp} alt="WhatsApp..." />+54 321 7917318</p>
+                            <p><img loading="lazy" src={Llamada} alt="Llamada..." /> <img src={WhatsApp} alt="WhatsApp..." />+57 3217917318</p>
                         </a>
                         <a href="mailto:mendozzaaymar02@gmail.com" target="_blanck">
-                            <p><img src={Correo} alt="Correo..." /> mendozzaaymar02@gmail.com</p>
+                            <p><img loading="lazy" src={Correo} alt="Correo..." /> mendozzaaymar02@gmail.com</p>
                         </a>
                     </>
                 </div>
