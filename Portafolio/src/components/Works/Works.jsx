@@ -65,7 +65,16 @@ export default function Works() {
         </h2>) : (newPortafolio =
             <h2>
                 New Portfolio
-            </h2>);        
+            </h2>);       
+            
+    let pNewPortafolio = "";
+    idiom === "ES" ? (pNewPortafolio =
+        <p>
+            Esta es la nueva <b>página</b> que he creado, te invito a mirar. <br /> ¡gracias por tu tiempo!
+        </p>) : (pNewPortafolio =
+            <p>
+                This is the new <b>page</b> I have created, invite you to watch. <br /> ¡thank you for your time!
+            </p>);
 
     let pPortFolio = "";
     idiom === "ES" ? (pPortFolio =
@@ -96,6 +105,7 @@ export default function Works() {
                         <div className={styles.infoCards}>
                             <div className={styles.info}>
                                 <h2>{newPortafolio}</h2>
+                                <p>{pNewPortafolio}</p>
                             </div>
                         </div>
                         <div className={styles.containerImg}>
